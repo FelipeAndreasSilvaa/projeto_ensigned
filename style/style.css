@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+html, body{
+    height: 100%;
+}
+
+.center{
+    max-width: 1100px;
+    display: flex;
+    padding:0 2%;
+    margin: 0 auto;
+}
+
+.hero-bg{
+    background-image: url('../images//hero-bg.jpg');
+    background-size: cover;
+    min-height: 500px;
+}
+.container span {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    outline: none;
+    border: none; /* Isso remove a borda */
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+.navbar-nav a{
+    color: white;
+    font-weight: bold;
+}
+
+
+.navbar .navbar-toggler .navbar-toggler-icon{
+    background-image: url('../images/menu.png');
+    background-size: 55px;
+}
+
+.chamada{
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.chamada h3{
+    font-size: 30px;
+}
+
+.chamada h2{
+    font-size: 60px;
+}
+
+.chamada p{
+    margin-top: 10px;
+}
+
+.chamada input[type=submit]{
+    padding: 10px 50px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+.what-we-do .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-container h2,
+.header-container p {
+   text-align: center;
+}
+
+.box-vitrine{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-vitrine .box {
+    text-align: center;
+    
+    z-index: 5;
+    margin: 35px 25px 0 25px;
+}
+
+.box-vitrine .box .img-box{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    border-radius: 100%;
+    background-color: #353434;
+    justify-content: center;
+    align-items: center;   
+}
+
+.box-vitrine .box:hover .img-box{
+    background:  #fec016;
+}
+
+.box-vitrine .box .detail-img h3{
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.who-we-are .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.who-img{
+    flex: 1;
+    max-width: 100%;
+}
+
+.who-text{
+    flex: 1;
+    max-width: 100%;
+}
+
+.container-slider{
+    overflow:hidden;
+    padding:40px 0;   
+}
+
+.container-slider-single{
+    float: left;
+    background-color:white;
+    text-align: center;
+    padding:15px;
+    border-radius:10px;
+}
+
+.container-slider-single p{
+    margin:15px 0;
+    color:#7E92AC;
+    font-size: 14px;
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+ /* the parent */
+ .slick-list {
+    margin-left:-27px;
+  }
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+  /****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+    
+	top:30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
+
+/*fim slick-slide*/
+
+.works{
+    background-image: url('../images/target-bg.jpg');
+    background-size: cover;
+    min-height: 150px;
+}
+
+@media screen and (max-width: 700px) {
+    .hero-bg{
+    min-height: 700px;
+     background-position: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .hero-bg{
+        min-height: 700px;
+         background-position: center;
+    }
+
+    .who-we-are .center{
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+   .who-img,
+   .who-text{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+   }
+}
